@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenDavidCasa.Login">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40">
+
+            <StackLayout >
+                <Image Source="uisrael.png" WidthRequest="100" HeightRequest="70"></Image>
+            </StackLayout>
+
+            <StackLayout Padding="20,22" HorizontalOptions="Center">
+                <Label Text="Iniciar Sesión" FontSize="30" />
+            </StackLayout>
+            
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"></Entry>
+            <Entry x:Name="txtClave" Placeholder="Ingrese su clave" IsPassword="True"></Entry>
+            <Button Text="Ingresar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked" BackgroundColor="#126e82" TextColor="White" BorderWidth="10"></Button>
+        </StackLayout>
+       
+        
+    </ContentPage.Content>
+</ContentPage>
